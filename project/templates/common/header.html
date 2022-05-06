@@ -1,0 +1,51 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <div class="container-fluid">
+    <!--Logo-->
+    <a class="navbar-brand text-uppercase" href="#">
+      <img src="{% static 'image/butterfly.png' %}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+    rijal constructions  & builders Pvt.ltd 
+    </a>
+
+    <!--Toogle Button-->
+    <!--Name of the COmapny-->
+   
+   
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav  mr-auto mb-2 mb-rg-2 ms-auto">
+        <li class="nav-item ms-4">
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link active" aria-current="page" href="{% url 'aboutus' %}">About Us</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link active" aria-current="page" href="{% url 'project' %}">Projects</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link active" aria-current="page" href="{% url 'awards' %}">Awards</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link active" aria-current="page" href="{% url 'gallery' %}">Gallery</a>
+        </li>
+        <li class="nav-item ms-4">
+          <a class="nav-link active" aria-current="page" href="{% url 'contactus' %}">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex ms-4 pe-3">
+        <button class="btn btn-outline-success" type="submit">LogIn</button>
+      </form>
+    </div>
+  </div>
+</nav>

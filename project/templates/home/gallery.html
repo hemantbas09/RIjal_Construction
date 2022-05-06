@@ -1,0 +1,9 @@
+{% extends 'common/base.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/home_css/gallery.css' %}" />
+{% block title %}Gallery{% endblock title %}
+
+{% block content %}
+<img class="w-25 p-2"  src="{% static '/image/bird.jpg' %}" class="img-thumbnail" alt="My Photo">
+<p class="as"> Hemant </p>
+{% endblock content %}
